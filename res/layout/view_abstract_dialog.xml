@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fang="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lLayout_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_grey_dialog"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.mycj.junsda.view.FangTextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+     android:textColor="@color/grey_text"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            fang:fang_typeface="JIAN" />
+
+        <com.mycj.junsda.view.FangTextView
+            android:id="@+id/txt_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+     android:textColor="@color/grey_text"
+            android:textSize="16sp"
+            fang:fang_typeface="JIAN" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="#c6c6c6" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/ll_contont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#c6c6c6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/alertdialog_left_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:src="@drawable/ic_gender_male" />
+
+            <com.mycj.junsda.view.FangTextView
+                android:id="@+id/btn_neg"
+                android:layout_marginStart="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:gravity="center"
+        android:textColor="@color/grey_text"
+                android:textSize="16sp"
+                fang:fang_typeface="JIAN" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_line"
+            android:layout_width="0.5dp"
+            android:layout_height="43dp"
+            android:background="@color/alertdialog_line"
+            android:drawablePadding="1dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/alertdialog_right_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:src="@drawable/ic_gender_female" />
+
+            <com.mycj.junsda.view.FangTextView
+                    android:layout_marginStart="12dp"
+                android:id="@+id/btn_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:gravity="center"
+           android:textColor="@color/grey_text"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                fang:fang_typeface="JIAN" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

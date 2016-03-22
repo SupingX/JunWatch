@@ -1,0 +1,382 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:my="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_main_bg"
+    android:orientation="vertical"
+    tools:context="com.mycj.junsda.fragment.HomeFragment" >
+
+    <!-- top -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_main_tab" >
+
+        <com.mycj.junsda.view.AlphaImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/ic_nav_back" />
+
+        <com.mycj.junsda.view.FangTextView
+            android:id="@+id/tv_info_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:text="@string/statistics"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/circle_text_date"
+            my:fang_typeface="JIAN" />
+
+        <com.mycj.junsda.view.AlphaImageView
+            android:id="@+id/img_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/ic_nav_more" />
+    </RelativeLayout>
+
+    <!-- date -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp" >
+
+        <com.mycj.junsda.view.FangTextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:text="2012/06"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/circle_text_date"
+            my:fang_typeface="NUM" />
+
+        <com.mycj.junsda.view.FangTextView
+            android:id="@+id/up"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_date"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/up"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            my:fang_alpha="true" />
+
+        <com.mycj.junsda.view.FangTextView
+            android:id="@+id/down"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_date"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/down"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            my:fang_alpha="true" />
+    </RelativeLayout>
+    <!-- table -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/bg_history_table"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+
+              <com.mycj.junsda.view.FangTextView
+                  
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center"
+                    android:text="@string/sport"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    my:fang_typeface="JIAN" />
+
+				<LinearLayout 
+				    android:layout_height="match_parent"
+				    android:layout_width="wrap_content"
+				    android:orientation="horizontal"
+				           android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+				    >
+                <com.mycj.junsda.view.FangTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="@string/avg"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    my:fang_typeface="JIAN" />
+                      <TextView
+                          android:id="@+id/tv_sport_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                     />
+                      
+                      <com.mycj.junsda.view.FangTextView
+                           android:id="@+id/tv_sport_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="@string/step_per_day"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    my:fang_typeface="JIAN" />
+				</LinearLayout>
+            </RelativeLayout>
+            
+    		<RadioGroup 
+    		     android:id="@+id/rg_count_sport"
+    		    android:layout_height="32dp"
+    		    android:layout_width="wrap_content"
+    		    android:orientation="horizontal"
+    		    android:layout_marginLeft="12dp"
+    		    android:layout_marginRight="12dp"
+    		    >
+    		    <com.mycj.junsda.view.FangRadioButton 
+    		             android:id="@+id/rb_sport_step"
+    		        android:layout_height="match_parent"
+    		        android:layout_width="wrap_content"
+    		        android:text="@string/rb_step"
+    		        android:paddingLeft="12dp"
+    		        android:paddingRight="12dp"
+    		            android:layout_gravity="center_vertical"
+    		        android:button="@null"
+    		        my:f_typeface="JIAN"
+    		        android:textColor="@drawable/selector_radio_btn_color"
+    		        android:textSize="12sp"
+    		        />
+    		    <View 
+    		        android:layout_height="match_parent"
+    		        android:layout_width="1dp"
+    		        android:background="@color/bg_main_tab"
+    		        android:layout_marginTop="8dp"
+    		        android:layout_marginBottom="8dp"
+    		        />
+    		    <com.mycj.junsda.view.FangRadioButton 
+    		           android:id="@+id/rb_sport_time"
+    		        android:layout_height="match_parent"
+    		        android:layout_width="wrap_content"
+    		             android:paddingLeft="12dp"
+    		        android:paddingRight="12dp"
+    		        android:text="@string/rb_time"
+    		            android:layout_gravity="center_vertical"
+    		        android:button="@null"
+    		        my:f_typeface="JIAN"
+    		        android:textColor="@drawable/selector_radio_btn_color"
+    		        android:textSize="12sp"
+    		        />
+    		    <View 
+    		        android:layout_height="match_parent"
+    		        android:layout_width="1dp"
+    		        android:background="@color/bg_main_tab"
+    		        android:layout_marginTop="8dp"
+    		        android:layout_marginBottom="8dp"
+    		        />
+    		    <com.mycj.junsda.view.FangRadioButton 
+    		           android:id="@+id/rb_sport_distance"
+    		        android:layout_height="match_parent"
+    		        android:layout_width="wrap_content"
+    		        android:text="@string/rb_distance"
+    		             android:paddingLeft="12dp"
+    		        android:paddingRight="12dp"
+    		            android:layout_gravity="center_vertical"
+    		        android:button="@null"
+    		        my:f_typeface="JIAN"
+    		        android:textColor="@drawable/selector_radio_btn_color"
+    		        android:textSize="12sp"
+    		        />
+    		    <View 
+    		        android:layout_height="match_parent"
+    		        android:layout_width="1dp"
+    		        android:background="@color/bg_main_tab"
+    		        android:layout_marginTop="8dp"
+    		        android:layout_marginBottom="8dp"
+    		        />
+    		    <com.mycj.junsda.view.FangRadioButton 
+    		           android:id="@+id/rb_sport_cal"
+    		        android:layout_height="match_parent"
+    		        android:layout_width="wrap_content"
+    		        android:text="@string/rb_cal"
+    		            android:layout_gravity="center_vertical"
+    		        android:button="@null"
+    		             android:paddingLeft="12dp"
+    		        android:paddingRight="12dp"
+    		        my:f_typeface="JIAN"
+    		        android:textColor="@drawable/selector_radio_btn_color"
+    		        android:textSize="12sp"
+    		        />
+    		    
+    		</RadioGroup>
+    
+            <com.mycj.junsda.view.CountView
+                android:clickable="true"
+                android:longClickable="true"
+                android:id="@+id/count_sport"
+                android:layout_height="160dp"
+                android:layout_width="match_parent"
+                >
+                </com.mycj.junsda.view.CountView>
+                
+            
+         
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/bg_history_table"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+
+              <com.mycj.junsda.view.FangTextView
+                  
+                    android:id="@+id/tv_sleep_steps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center"
+                    android:text="@string/sleep"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    my:fang_typeface="JIAN" />
+
+				<LinearLayout 
+				    android:layout_height="match_parent"
+				    android:layout_width="wrap_content"
+				    android:orientation="horizontal"
+				           android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+				    >
+                <com.mycj.junsda.view.FangTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="@string/avg"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    my:fang_typeface="JIAN" />
+                      <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="0"
+                       android:id="@+id/tv_sleep_value"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                     />
+                      
+                      <com.mycj.junsda.view.FangTextView
+                             android:id="@+id/tv_sleep_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="@string/step_per_day"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    my:fang_typeface="JIAN" />
+				</LinearLayout>
+            </RelativeLayout>
+            
+    		<RadioGroup 
+    		     android:id="@+id/rg_count_sleep"
+    		    android:layout_height="32dp"
+    		    android:layout_width="wrap_content"
+    		    android:orientation="horizontal"
+    		    android:layout_marginLeft="12dp"
+    		    android:layout_marginRight="12dp"
+    		    >
+    		    <com.mycj.junsda.view.FangRadioButton 
+    		        android:layout_height="match_parent"
+    		        android:layout_width="wrap_content"
+    		        android:text="@string/sleep_deep"
+    		        android:paddingLeft="12dp"
+    		        android:paddingRight="12dp"
+    		            android:layout_gravity="center_vertical"
+    		        android:button="@null"
+    		        my:f_typeface="JIAN"
+    		           android:id="@+id/rb_sleep_deep"
+    		        android:textColor="@drawable/selector_radio_btn_color"
+    		        android:textSize="12sp"
+    		        />
+    		    <View 
+    		        android:layout_height="match_parent"
+    		        android:layout_width="1dp"
+    		        android:background="@color/bg_main_tab"
+    		        android:layout_marginTop="8dp"
+    		        android:layout_marginBottom="8dp"
+    		        />
+    		    <com.mycj.junsda.view.FangRadioButton 
+    		        android:layout_height="match_parent"
+    		        android:layout_width="wrap_content"
+    		             android:paddingLeft="12dp"
+    		        android:paddingRight="12dp"
+    		        android:text="@string/sleep_light"
+    		           android:id="@+id/rb_sleep_light"
+    		            android:layout_gravity="center_vertical"
+    		        android:button="@null"
+    		        my:f_typeface="JIAN"
+    		        android:textColor="@drawable/selector_radio_btn_color"
+    		        android:textSize="12sp"
+    		        />
+    		    
+    		    
+    		</RadioGroup>
+    
+            <com.mycj.junsda.view.CountView
+                android:clickable="true"
+                android:longClickable="true"
+                android:id="@+id/count_sleep"
+                android:layout_height="160dp"
+                android:layout_width="match_parent"
+                >
+                </com.mycj.junsda.view.CountView>
+
+    
+
+</LinearLayout>

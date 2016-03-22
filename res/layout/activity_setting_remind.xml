@@ -1,0 +1,321 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fang="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_main_bg"
+    android:orientation="vertical"
+    tools:context="com.mycj.junsda.DeviceAcitivy" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_main_tab" >
+
+        <com.mycj.junsda.view.AlphaImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/ic_nav_back" />
+
+        <com.mycj.junsda.view.FangTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/personal_remind"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            fang:fang_typeface="JIAN" />
+    </RelativeLayout>
+
+    <com.mycj.junsda.view.DampingScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="@null" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="12dp"
+                android:background="@drawable/selector_bg_item_setting"
+                 >
+
+                <com.mycj.junsda.view.FangTextView
+                    android:id="@+id/rb_unit_zh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/remind_incoming"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    fang:fang_typeface="JIAN" />
+
+                <CheckBox
+                    android:onClick="mRemindClick"
+                    android:id="@+id/cb_remind_incoming"
+                    android:layout_width="36dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@null"
+                    android:background="@drawable/selector_check_box"
+               	 />
+
+            </RelativeLayout>
+
+            <!-- line 2 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                  android:paddingLeft="20dp"
+                android:paddingRight="12dp"
+                android:background="@drawable/selector_bg_item_setting"
+                 >
+
+                <com.mycj.junsda.view.FangTextView
+                    android:id="@+id/alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/alarm_day"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    fang:fang_typeface="JIAN" />
+
+                  <com.mycj.junsda.view.FangTextView
+                           android:id="@+id/tv_remind_alarm"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerVertical="true"
+                      android:layout_gravity="center_vertical"
+                      android:layout_marginLeft="12dp"
+                      android:layout_marginStart="6dp"
+                      android:layout_toRightOf="@id/alarm"
+                      android:background="@drawable/bg_grey_text"
+                      android:clickable="true"
+                      android:gravity="center"
+                      android:paddingBottom="2dp"
+                      android:paddingLeft="6dp"
+                      android:paddingRight="6dp"
+                      android:paddingTop="2dp"
+                      
+                      android:text="06:00"
+                      android:textColor="@android:color/white"
+                      android:textSize="12sp"
+                      fang:fang_alpha="true"
+                      fang:fang_typeface="NUM" />
+
+                <CheckBox
+                    android:onClick="mRemindClick"
+                         android:id="@+id/cb_remind_alarm"
+                         android:layout_width="36dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@null"
+                    android:background="@drawable/selector_check_box"
+               	 />
+
+            </RelativeLayout>
+            <!-- line 3 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+               android:paddingLeft="20dp"
+                android:paddingRight="12dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_bg_item_setting"
+                 >
+
+                <com.mycj.junsda.view.FangTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/remind_long_sit"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    fang:fang_typeface="JIAN" />
+
+                <CheckBox
+                    android:onClick="mRemindClick"
+                         android:id="@+id/cb_remind_long_sit"
+                         android:layout_width="36dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@null"
+                    android:background="@drawable/selector_check_box"
+               	 />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_bg_item_setting"
+                android:orientation="vertical" >
+
+                     <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+            android:paddingLeft="20dp"
+                android:paddingRight="12dp"
+                 >
+
+                <com.mycj.junsda.view.FangTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/remind_birthday"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    fang:fang_typeface="JIAN" />
+
+                <CheckBox
+                    android:onClick="mRemindClick"
+                         android:id="@+id/cb_remind_birthday"
+                    android:layout_width="36dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@null"
+                    android:background="@drawable/selector_check_box"
+               	 />
+
+            </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/bg_main_tab" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                        android:paddingLeft="20dp"
+                    android:orientation="horizontal" >
+
+                    <com.mycj.junsda.view.FangTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="6dp"
+                        android:text="@string/date_"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        fang:fang_typeface="JIAN" />
+
+                    <com.mycj.junsda.view.FangTextView
+                     android:id="@+id/tv_remind_birthday_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="6dp"
+                        android:background="@drawable/bg_grey_text"
+                        android:gravity="center"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="2dp"
+                        android:text="01/01"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        fang:fang_typeface="NUM" />
+                    <com.mycj.junsda.view.FangTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="6dp"
+                        android:padding="6dp"
+                        android:text="@string/time_"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        fang:fang_typeface="JIAN" />
+
+                    <com.mycj.junsda.view.FangTextView
+                               android:id="@+id/tv_remind_birthday_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="6dp"
+                        android:background="@drawable/bg_grey_text"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingTop="2dp"
+                        android:text="08:00"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        fang:fang_alpha="true"
+                        fang:fang_typeface="NUM" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- line 3 -->
+            <!-- line 4 -->
+
+                 <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="12dp"
+                     android:layout_marginTop="10dp"
+                android:background="@drawable/selector_bg_item_setting"
+                 >
+
+                <com.mycj.junsda.view.FangTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/remind_time_point"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    fang:fang_typeface="JIAN" />
+
+                <CheckBox
+                    android:onClick="mRemindClick"
+                         android:id="@+id/cb_remind_point_time"
+                         android:layout_width="36dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:button="@null"
+                    android:background="@drawable/selector_check_box"
+               	 />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </com.mycj.junsda.view.DampingScrollView>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SportCircleView">
+        <attr name="circle_backgroundColor" format="reference" />
+        <attr name="circle_ringColor" format="reference" />
+        <attr name="circle_backgroundWidth" format="dimension"></attr>
+        <attr name="circle_ringWidth" format="dimension"></attr>
+        <attr name="circle_max" format="integer"></attr>
+        <attr name="circle_progress" format="integer"></attr>
+    </declare-styleable>
+    <declare-styleable name="FantTextView">
+        <attr name="fang_alpha" format="boolean"></attr>
+        <attr name="fang_typeface" format = "string">
+        </attr>
+    </declare-styleable>
+      <declare-styleable name="FangtRadioButton">
+        <attr name="f_typeface" format = "string">
+        </attr>
+    </declare-styleable>
+      <declare-styleable name="FangCheckBox">
+        <attr name="fbox_typeface" format = "string">
+        </attr>
+    </declare-styleable>
+
+</resources>

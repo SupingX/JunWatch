@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mefit</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_device_acitivy">DeviceAcitivy</string>
+    <string name="title_activity_personal_setting">PersonalSettingActivity</string>
+
+    <!-- dialog -->
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="cancel">返回</string>
+    <string name="confirm">确定</string>
+    <string name="title_activity_sync_data">SyncDataActivity</string>
+    <string name="title_activity_setting_remind">SettingRemindActivity</string>
+    <string name="title_activity_history_sleep">HistorySleepActivity</string>
+    <string name="title_activity_history_sport">HistorySportActivity</string>
+    <string name="up">&lt;</string>
+    <string name="down">></string>
+    <string name="title_activity_count">CountActivity</string>
+    <string name="title_activity_sport_info">SportInfoActivity</string>
+    <string name="title_activity_spalish">SpalishActivity</string>
+    <string name="share">分享</string>
+    <string name="connected">已连接</string>
+    <string name="refresh">刷新</string>
+    <string name="sync_data">同步数据</string>
+    <string name="about">关于产品</string>
+    <string name="exit_app">退出App？</string>
+    <string name="tab_home">主页</string>
+    <string name="tab_me">我</string>
+    <string name="tab_setting">设置</string>
+    <string name="per_day">/天</string>
+    <string name="step">步</string>
+    <string name="minute">分钟</string>
+    <string name="km">千米</string>
+    <string name="kcal">千卡</string>
+    <string name="delete">删除</string>
+    <string name="statistics">数据统计</string>
+    <string name="sport">运动</string>
+    <string name="avg">"平均值 : "</string>
+    <string name="step_per_day">步/天</string>
+    <string name="rb_step">步数</string>
+    <string name="rb_time">时间</string>
+    <string name="rb_distance">距离</string>
+    <string name="rb_cal">卡路里</string>
+    <string name="sleep">睡眠</string>
+    
+    <string name="sleep_deep">深睡</string>
+    <string name="sleep_light">浅睡</string>
+    
+        <string name="nuknow">未知</string>
+    <string name="connect_success">连接成功</string>
+    <string name="connect_fail">连接失败</string>
+    <string name="my_device">我的设备</string>
+    <string name="bonded_device">绑定的设备</string>
+    <string name="nearby_device">附近的设备</string>
+       <string name="sleep_history">睡眠历史</string>
+     <string name="sport_histroy">运动历史</string>
+     <string name="success">成功</string>
+     
+     <string name="open">开启</string>
+    <string name="close">关闭</string>
+    <string name="sex">性别</string>
+    <string name="woman">女</string>
+    <string name="man">男</string>
+    <string name="weight">体重</string>
+    <string name="height">身高</string>
+    <string name="sleep_time">睡眠时间</string>
+    <string name="wake_up">起床时间</string>
+    <string name="zh_">公制</string>
+    <string name="en_">英制</string>
+    <string name="birthday">出生年月</string>
+    <string name="sleep_jiance">睡眠检测</string>
+    
+     <string name="remind_date">提醒日期</string>
+    <string name="remind_time">提醒时间</string>
+    <string name="disconnect_info">手环已断开连接</string>
+    <string name="personal_remind">个人提醒</string>
+    <string name="remind_incoming">来电提醒</string>
+    <string name="alarm_day">每日闹铃</string>
+    <string name="remind_long_sit">久坐提醒</string>
+    <string name="remind_birthday">生日提醒</string>
+    <string name="date_">日期</string>
+    <string name="time_">时间</string>
+    <string name="remind_time_point">整点报时</string>
+        <string name="km_per_hour">公里/时</string>
+    <string name="use_hour">用时</string>
+    <string name="hour">小时</string>
+    <string name="distance">距离(千米)</string>
+    <string name="avg_speed">平均速度</string>
+    <string name="energy_consumption">能量消耗</string>
+    
+    <string name="total_distance">累计里程</string>
+    <string name="total_time">累计时间</string>
+    <string name="total_steps">累计步数</string>
+    <string name="times_per_min">次/分钟</string>
+    <string name="times">次</string>
+    <string name="now_hr">当前心率</string>
+    <string name="mi">米</string>
+    <string name="cal">卡</string>
+     <string name="person_setting">个人设置</string>
+    <string name="long_camera">远程拍照</string>
+       <string name="searching">搜索中</string>
+    <string name="start_search">搜索设备</string>
+
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:my="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" >
+
+                <com.mycj.junsda.view.FangTextView
+                    android:id="@+id/tv_sport_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                       android:layout_gravity="center_vertical"
+                    android:text="08月06日"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    my:fang_typeface="JIAN" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ic_sport_steps"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp" >
+
+                <com.mycj.junsda.view.FangTextView
+                          android:id="@+id/tv_sport_steps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="4444"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    my:fang_typeface="NUM" />
+                <com.mycj.junsda.view.FangTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/tv_sport_steps"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/step"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    my:fang_typeface="JIAN" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/ic_sleep_time" />
+                      <com.mycj.junsda.view.FangTextView
+                          android:id="@+id/tv_sport_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="00:56:45"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp"
+                    my:fang_typeface="NUM" />
+                      <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:padding="4dp"
+                android:src="@drawable/ic_turn_to" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View 
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_height="0.5dp"
+                android:layout_width="match_parent"
+                android:background="@color/bg_main_tab"
+                />
+        </LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mycj.junsda"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="19" />
+    <!-- 蓝牙 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 存储文件 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 相机 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <!-- <uses-permission android:name="android.permission.WRITE_SMS" /> -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 读取手机联系人 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_app_jun"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.DeviceAcitivy"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activity.CameraActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <service
+            android:name="com.laput.service.XBlueService"
+            android:enabled="true" >
+        </service>
+
+        <activity
+            android:name=".activity.SettingPersonalActivity"
+            android:label="@string/title_activity_personal_setting" >
+        </activity>
+        <activity
+            android:name=".activity.SettingSyncDataActivity"
+            android:label="@string/title_activity_sync_data" >
+        </activity>
+        <activity
+            android:name=".activity.SettingRemindActivity"
+            android:label="@string/title_activity_setting_remind" >
+        </activity>
+        <activity
+            android:name=".activity.HistorySleepActivity"
+            android:label="@string/title_activity_history_sleep" >
+        </activity>
+        <activity
+            android:name=".activity.HistorySportActivity"
+            android:label="@string/title_activity_history_sport" >
+        </activity>
+        <activity
+            android:name=".activity.CountActivity"
+            android:label="@string/title_activity_count" >
+        </activity>
+        <activity
+            android:name=".activity.SportInfoActivity"
+            android:label="@string/title_activity_sport_info" >
+        </activity>
+        <activity
+            android:name=".activity.SpalishActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+    </application>
+
+</manifest>

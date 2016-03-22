@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg_main_tab">#C2842D</color>
+    <color name="bg_main_tab_off">#55C2842D</color>
+    <color name="circle_ring">#F6AB1A</color>
+    <color name="circle_bg">#7D5732</color>
+    <color name="grey_pressed">#f0e9e9</color>
+    <color name="white_light">#90ffffff</color>
+
+    <!-- personal setting -->
+    <color name="grey_bg_setting">#9B9B9B</color>
+    <color name="grey_bg_setting_checked">#7D5732</color>
+    <!-- dialog -->
+    <color name="trans">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="grey_dialog">#9B9B9B</color>
+    <color name="grey_text">#D8D6D6</color>
+    <color name="orange_text">#EAAB44</color>
+
+      <color name="blue">#037BFF</color>
+</resources>

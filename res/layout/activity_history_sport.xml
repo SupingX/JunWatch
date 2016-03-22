@@ -1,0 +1,384 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:my="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_main_bg"
+    android:orientation="vertical"
+    tools:context="com.mycj.jusd.fragment.HomeFragment" >
+
+    <!-- top -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_main_tab" >
+
+        <com.mycj.junsda.view.AlphaImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/ic_nav_back" />
+
+        <com.mycj.junsda.view.FangTextView
+            android:id="@+id/tv_info_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:text="运动历史"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/circle_text_date"
+            my:fang_typeface="JIAN" />
+
+        <com.mycj.junsda.view.AlphaImageView
+            android:id="@+id/img_share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/ic_share" />
+    </RelativeLayout>
+
+    <!-- date -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp" >
+
+        <com.mycj.junsda.view.FangTextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:text="2012/06"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/circle_text_date"
+            my:fang_typeface="NUM" />
+
+        <com.mycj.junsda.view.FangTextView
+            android:id="@+id/up"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_date"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/up"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            my:fang_alpha="true" />
+
+        <com.mycj.junsda.view.FangTextView
+            android:id="@+id/down"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_date"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/down"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            my:fang_alpha="true" />
+    </RelativeLayout>
+    <!-- table -->
+	<FrameLayout 
+	    android:layout_marginLeft="12dp"
+	    android:layout_marginRight="12dp"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_history_table"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="24dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_history_sport"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="6dp"
+                    android:src="@drawable/ic_sport_count" />
+
+                <com.mycj.junsda.view.FangTextView
+                    android:id="@+id/tv_sport_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center"
+                    android:text="31次"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    my:fang_typeface="JIAN" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/bg_main_tab" />
+            </RelativeLayout>
+
+            <!-- <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:padding="4dp"
+                android:src="@drawable/ic_turn_to"
+                android:visibility="invisible" /> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:clickable="true"
+            android:id="@+id/ll_sport_steps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="6dp"
+                    android:src="@drawable/ic_sport_steps" />
+
+                <com.mycj.junsda.view.FangTextView
+                    android:id="@+id/tv_sport_steps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center"
+                    android:text="212.1小时"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    my:fang_typeface="JIAN" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/bg_main_tab" />
+            </RelativeLayout>
+
+            <!-- <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:padding="4dp"
+                android:src="@drawable/ic_turn_to" /> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sport_time"
+                  android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="6dp"
+                    android:src="@drawable/ic_sport_time" />
+
+                <com.mycj.junsda.view.FangTextView
+                    android:id="@+id/tv_sport_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center"
+                    android:text="212.1小时"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    my:fang_typeface="JIAN" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/bg_main_tab" />
+            </RelativeLayout>
+
+            <!-- <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:padding="4dp"
+                android:src="@drawable/ic_turn_to" /> -->
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_sport_distance"
+                  android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="6dp"
+                    android:src="@drawable/ic_sport_distance" />
+
+                <com.mycj.junsda.view.FangTextView
+                    android:id="@+id/tv_sport_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center"
+                    android:text="212.1小时"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    my:fang_typeface="JIAN" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/bg_main_tab" />
+            </RelativeLayout>
+
+            <!-- <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:padding="4dp"
+                android:src="@drawable/ic_turn_to" /> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sport_consume"
+                  android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="6dp"
+                    android:src="@drawable/ic_sport_consume" />
+
+                <com.mycj.junsda.view.FangTextView
+                    android:id="@+id/tv_sport_consume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center"
+                    android:text="212.1小时"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    my:fang_typeface="JIAN" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/bg_main_tab" />
+            </RelativeLayout>
+
+            <!-- <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:padding="4dp"
+                android:src="@drawable/ic_turn_to" /> -->
+        </LinearLayout>
+    </LinearLayout>
+<com.mycj.junsda.view.AlphaImageView 
+          android:layout_height="32dp"
+          android:layout_width="32dp"
+          android:clickable="true"
+          android:onClick="openMoreInfo"
+          android:src="@drawable/ic_triangle"
+          android:layout_gravity="bottom|right"
+          />
+</FrameLayout>
+    <!-- data -->
+    <com.mycj.junsda.view.DampingListView
+        android:scrollbars="@null"
+        android:listSelector="@drawable/selector_item_history_sport"
+        android:layout_marginTop="20dp"
+        android:id="@+id/lv_history_sport"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.mycj.junsda.view.DampingListView>
+    
+
+</LinearLayout>

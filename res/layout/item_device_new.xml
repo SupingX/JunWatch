@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:my="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:gravity="center"
+    android:padding="12dp" >
+
+    <com.mycj.junsda.view.FangTextView
+        android:id="@+id/tv_device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:text="蓝牙名称"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        my:fang_typeface="JIAN" />
+	<RelativeLayout 
+	        android:layout_alignParentEnd="true"
+	    android:layout_height="match_parent"
+	    android:layout_width="wrap_content"
+	    >
+	    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/img_connecting"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_action_refresh"
+         />
+    <com.mycj.junsda.view.FangTextView
+        android:id="@+id/tv_connecting_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:text="未连接"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        my:fang_typeface="NUM" />
+    
+    </RelativeLayout>
+
+</RelativeLayout>

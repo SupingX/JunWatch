@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+        xmlns:my="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <com.mycj.junsda.view.FangTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        my:fang_typeface="FAN"
+        android:text="红豆生南国" />
+    <com.mycj.junsda.view.FangTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                my:fang_typeface="JIAN"
+        android:text="出来发几只" />
+    <com.mycj.junsda.view.FangTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="阿阿fafa" />
+    <com.mycj.junsda.view.FangTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+              my:fang_typeface="NUM"
+        android:text="111121414141" />
+    <com.mycj.junsda.view.FangTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+               my:fang_typeface="NUM"
+        android:text="111121414141"  />
+    <com.mycj.junsda.view.FangTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="111121414141" />
+    <com.mycj.junsda.view.FangTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+    <com.mycj.junsda.view.FangTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+    <com.mycj.junsda.view.FangTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+    <com.mycj.junsda.view.FangTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+    <com.mycj.junsda.view.FangTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+    <com.mycj.junsda.view.FangTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+    <com.mycj.junsda.view.FangTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+    <com.mycj.junsda.view.FangTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+</LinearLayout>

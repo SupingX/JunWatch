@@ -1,0 +1,242 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:my="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_main_bg"
+    android:orientation="vertical"
+    tools:context="com.mycj.junsda.fragment.HomeFragment" >
+
+    <!-- top -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_main_tab" >
+
+        <com.mycj.junsda.view.AlphaImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/ic_nav_back" />
+
+        <com.mycj.junsda.view.FangTextView
+            android:id="@+id/tv_info_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:text="2011/11/23"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/circle_text_date"
+            my:fang_typeface="NUM" />
+
+        <com.mycj.junsda.view.AlphaImageView
+            android:id="@+id/img_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/ic_nav_more" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="12dp"
+        android:background="@drawable/bg_sport_info" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_record_detail_i" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:id="@+id/ll"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:orientation="vertical" >
+
+                <com.mycj.junsda.view.FangTextView
+                    android:id="@+id/tv_sport_info_step"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="1000"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    my:fang_typeface="NUM" />
+
+                <com.mycj.junsda.view.FangTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/step"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    my:fang_typeface="JIAN" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                             android:layout_gravity="center"
+                android:orientation="vertical" >
+
+                <com.mycj.junsda.view.FangTextView
+                            android:id="@+id/tv_sport_info_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="10:22:00"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    my:fang_typeface="NUM" />
+
+                <com.mycj.junsda.view.FangTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/use_hour"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    my:fang_typeface="JIAN" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                             android:layout_gravity="center"
+                android:orientation="vertical" >
+
+                <com.mycj.junsda.view.FangTextView
+                            android:id="@+id/tv_sport_info_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="1000km"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    my:fang_typeface="NUM" />
+
+                <com.mycj.junsda.view.FangTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/distance"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    my:fang_typeface="JIAN" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <RelativeLayout 
+            android:id="@+id/rl_speed"
+            android:layout_height="48dp"
+            android:layout_width="match_parent"
+            android:layout_below="@id/ll"
+            >
+
+            <ImageView
+                android:id="@+id/img_speed"
+                android:layout_marginLeft="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_sport_time" />
+
+            <com.mycj.junsda.view.FangTextView
+                android:layout_marginLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/img_speed"
+                android:text="@string/avg_speed"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                my:fang_typeface="JIAN" />
+            
+                 <com.mycj.junsda.view.FangTextView
+                             android:id="@+id/tv_sport_avg_speed"
+                     android:layout_alignParentRight="true"
+                     android:layout_marginRight="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="3.12公里/时"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                my:fang_typeface="JIAN" />
+
+        </RelativeLayout>
+        <RelativeLayout 
+            android:layout_height="48dp"
+            android:layout_width="match_parent"
+            android:layout_below="@id/rl_speed"
+            >
+
+            <ImageView
+                android:id="@+id/img_consume"
+                android:layout_marginLeft="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_sport_consume" />
+
+            <com.mycj.junsda.view.FangTextView
+                android:layout_marginLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/img_consume"
+                android:text="@string/energy_consumption"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                my:fang_typeface="JIAN" />
+            
+                 <com.mycj.junsda.view.FangTextView
+                             android:id="@+id/tv_sport_info_cal"
+                     android:layout_alignParentRight="true"
+                     android:layout_marginRight="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="30千卡"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                my:fang_typeface="JIAN" />
+
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+</LinearLayout>
